@@ -15,4 +15,5 @@
 - (id)initWithReceiver:(id)context;
 - (void)addScript:(id)script withSourceURL:(id)URL;
 - (void)handle:(id)param;
+- (id)send:(id)data;
 @end

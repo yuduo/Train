@@ -35,7 +35,10 @@
 
 - (void)callPage:(int32_t)page action:(id)action arguments:(id)arg
 {
-    
+    [self.context send:[NSDictionary dictionaryWithObjectsAndKeys:
+     [NSNumber numberWithLong:page],@"pageId",
+     [action description],@"action",
+     arg,@"args",nil]];
 }
 
 + (id)actions
