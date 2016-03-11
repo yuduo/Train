@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBSegmentedRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBSegmentedRow : BBRow
+
+@end

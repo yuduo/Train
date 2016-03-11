@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBPickerTableViewCell : NSObject
-@end
+#import "BBTableViewCell.h"
+@interface BBPickerTableViewCell : BBTableViewCell
+
+@end

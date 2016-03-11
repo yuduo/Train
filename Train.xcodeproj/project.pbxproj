@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85311F231C9172D900DDD3D3 /* TAOrderTrainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85311F221C9172D900DDD3D3 /* TAOrderTrainTableViewCell.m */; };
 		85A73D871C8D5D930019F384 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A73D861C8D5D930019F384 /* main.m */; };
 		85A73D8A1C8D5D930019F384 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A73D891C8D5D930019F384 /* AppDelegate.m */; };
 		85A73D8D1C8D5D930019F384 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A73D8C1C8D5D930019F384 /* ViewController.m */; };
@@ -135,6 +136,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85311F211C9172D900DDD3D3 /* TAOrderTrainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOrderTrainTableViewCell.h; sourceTree = "<group>"; };
+		85311F221C9172D900DDD3D3 /* TAOrderTrainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOrderTrainTableViewCell.m; sourceTree = "<group>"; };
 		85A73D821C8D5D930019F384 /* Train.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Train.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A73D861C8D5D930019F384 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85A73D881C8D5D930019F384 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -606,6 +609,8 @@
 				85A73E9D1C900A320019F384 /* BBWindow.m */,
 				85A73EF31C9113890019F384 /* TAExchangeRow.h */,
 				85A73EF41C9113890019F384 /* TAExchangeRow.m */,
+				85311F211C9172D900DDD3D3 /* TAOrderTrainTableViewCell.h */,
+				85311F221C9172D900DDD3D3 /* TAOrderTrainTableViewCell.m */,
 				85A73D8E1C8D5D930019F384 /* Main.storyboard */,
 				85A73D911C8D5D930019F384 /* Assets.xcassets */,
 				85A73D931C8D5D930019F384 /* LaunchScreen.storyboard */,
@@ -828,6 +833,7 @@
 				85A73EE21C900A320019F384 /* BBSocialShareDelegate.m in Sources */,
 				85A73EB51C900A320019F384 /* BBCollectionSeparatorView.m in Sources */,
 				85A73DED1C8ED3690019F384 /* BBCollectionView.m in Sources */,
+				85311F231C9172D900DDD3D3 /* TAOrderTrainTableViewCell.m in Sources */,
 				85A73EE41C900A320019F384 /* BBStoreProductViewController.m in Sources */,
 				85A73DD21C8EA35A0019F384 /* BBTableViewController.m in Sources */,
 				85A73EC41C900A320019F384 /* BBHtmlTableViewCell.m in Sources */,
@@ -1098,6 +1104,7 @@
 				85A73DB11C8D5D930019F384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85A73DB21C8D5D930019F384 /* Build configuration list for PBXNativeTarget "TrainTests" */ = {
 			isa = XCConfigurationList;
@@ -1106,6 +1113,7 @@
 				85A73DB41C8D5D930019F384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85A73DB51C8D5D930019F384 /* Build configuration list for PBXNativeTarget "TrainUITests" */ = {
 			isa = XCConfigurationList;
@@ -1114,6 +1122,7 @@
 				85A73DB71C8D5D930019F384 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

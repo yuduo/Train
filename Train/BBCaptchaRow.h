@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBCaptchaRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBCaptchaRow : BBRow
+
+@end

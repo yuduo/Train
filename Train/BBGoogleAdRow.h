@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBGoogleAdRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBGoogleAdRow : BBRow
+
+@end

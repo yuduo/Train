@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBSliderTableViewCell : NSObject
-@end
+#import "BBTableViewCell.h"
+@interface BBSliderTableViewCell : BBTableViewCell
+
+@end

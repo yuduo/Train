@@ -5,7 +5,7 @@
 #import "BBTableViewDataSource.h"
 #import "BBUtil.h"
 @interface BBTableView()
-@property(nonatomic,assign)  BBRoot *root;
+
 @end
 
 @implementation BBTableView

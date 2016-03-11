@@ -1,3 +1,6 @@
 #import <Foundation/Foundation.h>
-@interface BBFieldTableViewCell : NSObject
-@end
+#import "BBTableViewCell.h"
+@interface BBFieldTableViewCell : BBTableViewCell
+@property(nonatomic,strong)id delegate;
+
+@end

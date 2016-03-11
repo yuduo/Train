@@ -1,13 +1,25 @@
 #import "define.h"
-#import "BBButtonTableViewCell.h"
-@implementation BBButtonTableViewCell
-- (void)initWithStyle:(id)initwithstyle reuseIdentifier:(id)reuseidentifier 
-{
-}
-- (void)prepareForReuse
-{
-}
-- (void)layoutSubviews
-{
-}
-@end
+
+#import "BBButtonTableViewCell.h"
+
+@implementation BBButtonTableViewCell
+
+- (id)initWithStyle:(id)initwithstyle reuseIdentifier:(id)reuseidentifier 
+
+{
+    return self;
+}
+
+- (void)prepareForReuse
+
+{
+
+}
+
+- (void)layoutSubviews
+
+{
+
+}
+
+@end

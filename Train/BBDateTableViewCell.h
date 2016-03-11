@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBDateTableViewCell : NSObject
-@end
+#import "BBTableViewCell.h"
+@interface BBDateTableViewCell : BBTableViewCell
+
+@end

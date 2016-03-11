@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBPickerRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBPickerRow : BBRow
+
+@end

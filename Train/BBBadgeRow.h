@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBBadgeRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBBadgeRow : BBRow
+
+@end

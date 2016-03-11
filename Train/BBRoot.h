@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BBAttribute.h"
-#import "BBTableView.h"
+
 #import "BBCollectionView.h"
 @interface BBRoot : BBAttribute
 @property(nonatomic,assign)char grouped;

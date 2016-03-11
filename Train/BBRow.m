@@ -1,5 +1,6 @@
 
 #import "BBRow.h"
+#import "BBTableViewCell.h"
 @implementation BBRow
 
 - (id)init
@@ -48,7 +49,14 @@
 - (void)update
 
 {
-
+    if (self.key) {
+        if (self.bind) {
+            if([self.bind objectForKey:@"value"])
+            {
+                [self setKey:[self.bind objectForKey:@"value"]];
+            }
+        }
+    }
 }
 
 - (void)setAccessoryView
@@ -63,10 +71,10 @@
 
 }
 
-- (void)bindData
+- (void)bindData:(id)setting
 
 {
-
+    
 }
 
 - (void)indexPath
@@ -93,16 +101,31 @@
 
 }
 
-- (void)createCellForTableView
+- (void)createCellForTableView:(id)className
 
 {
-
+    NSString *identifier;
+    if ([[self cellClass] isKindOfClass:[NSString class]]) {
+        if ([[self identifier] isKindOfClass:[NSString class]]) {
+            identifier = [NSString stringWithFormat:@"-%@",[self identifier]];
+        }else
+        {
+            identifier = @"";
+        }
+        
+        [NSString stringWithFormat:@"%@%@",[self cellClass],identifier];
+        
+        //dequeueReusableCellWithIdentifier:
+    }else
+    {
+        
+    }
 }
 
-- (void)cellClass
+- (id)cellClass
 
 {
-
+    return [BBTableViewCell class];
 }
 
 - (void)heightForTableView
@@ -129,10 +152,10 @@
 
 }
 
-- (void)identifier
+- (id)identifier
 
 {
-
+return @"";
 }
 
 - (void)setIdentifier
@@ -595,11 +618,12 @@
 
 {
     return [NSDictionary dictionaryWithObjectsAndKeys:
-            [NSNumber numberWithInteger:1],@"imageData",
-            [NSNumber numberWithInteger:1],@"textFont",
-            [NSNumber numberWithInteger:1],@"textFontSize",
-            [NSNumber numberWithInteger:1],@"detailTextFont",
-            [NSNumber numberWithInteger:1],@"detailTextFontSize",
+            [NSNumber numberWithInteger:1],@"identifier",
+            [NSNumber numberWithInteger:1],@"hidden",
+            [NSNumber numberWithInteger:1],@"enabled",
+            [NSNumber numberWithInteger:1],@"height",
+            [NSNumber numberWithInteger:1],@"deletable",
+            [NSNumber numberWithInteger:1],@"selected",
             [NSNumber numberWithInteger:1],@"imageCornerRadius",
             [NSNumber numberWithInteger:1],@"key",
             [NSNumber numberWithInteger:1],@"text",

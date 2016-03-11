@@ -14,7 +14,7 @@
 @property(nonatomic,strong) id bbDataSource;
 @property(nonatomic,strong) id bbDelegate;
 @property(nonatomic,assign) char highPerformance;
-
+@property(nonatomic,strong)  BBRoot *root;
 @property(nonatomic,strong)  BBAction *action;
 @property(nonatomic,strong)  NSString *refreshAction;
 @property(nonatomic,strong)  UIRefreshControl *refreshControl;

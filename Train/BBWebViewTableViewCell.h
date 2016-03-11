@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBWebViewTableViewCell : NSObject
-@end
+#import "BBTableViewCell.h"
+@interface BBWebViewTableViewCell : BBTableViewCell
+
+@end

@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBDateRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBDateRow : BBRow
+
+@end

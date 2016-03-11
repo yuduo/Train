@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBSwitchTableViewCell : NSObject
-@end
+#import "BBTableViewCell.h"
+@interface BBSwitchTableViewCell : BBTableViewCell
+
+@end

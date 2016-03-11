@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBSliderRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBSliderRow : BBRow
+
+@end

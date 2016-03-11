@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBGridTableViewCell : NSObject
-@end
+#import "BBTableViewCell.h"
+@interface BBGridTableViewCell : BBTableViewCell
+
+@end

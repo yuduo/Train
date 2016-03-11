@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBSegmentedTableViewCell : NSObject
-@end
+#import "BBTableViewCell.h"
+@interface BBSegmentedTableViewCell : BBTableViewCell
+
+@end

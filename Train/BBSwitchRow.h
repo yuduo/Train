@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBSwitchRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBSwitchRow : BBRow
+
+@end

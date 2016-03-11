@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBWebViewRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBWebViewRow : BBRow
+
+@end

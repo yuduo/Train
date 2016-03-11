@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBCalendarRow : NSObject
-@end
+#import "BBRow.h"
+@interface BBCalendarRow : BBRow
+
+@end

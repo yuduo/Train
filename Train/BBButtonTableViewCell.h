@@ -1,3 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface BBButtonTableViewCell : NSObject
-@end
+#import "BBTableViewCell.h"
+@interface BBButtonTableViewCell : BBTableViewCell
+
+@end

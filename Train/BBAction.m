@@ -7,7 +7,7 @@
 //
 
 #import "BBAction.h"
-
+#import "BBTableView.h"
 @implementation BBAction
 + (void)realm12306:(id)param handler:(id)handler
 {
@@ -655,15 +655,34 @@
 }
 - (void)action:(id)param data:(id)data
 {
-    
+    [self action:param data:data extra:0];
 }
 - (void)action:(id)param data:(id)data extra:(id)extra
 {
-    
+    if (self.bridge) {
+        if([self.delegate  isKindOfClass:[BBTableView class]])
+        {
+//            [[(BBTableView*)self.delegate root]values];
+        }
+        
+//        [self.bridge callPage:self.pageId action:param arguments:[NSArray arrayWithObjects:]];
+    }
 }
 - (void)callAction:(id)param handler:(id)handler
 {
-    
+    if ([param isKindOfClass:[NSArray class]]) {
+        
+        
+    }else if([param isKindOfClass:[NSDictionary class]])
+    {
+        if ([[param objectForKey:@"action" ] isKindOfClass:[NSString class]]) {
+            NSString *handle = [NSString stringWithFormat:@"%@:handler:",[param objectForKey:@"action" ]];
+            if ([self respondsToSelector:NSSelectorFromString(handle)] ) {
+                [self performSelector:NSSelectorFromString(handle) withObject:[param objectForKey:@"data" ] withObject:handler];
+            }
+            
+        }
+    }
 }
 - (void)parent:(id)param handler:(id)handler
 {
